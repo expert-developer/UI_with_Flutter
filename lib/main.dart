@@ -439,454 +439,438 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      body: CustomScrollView(
-        slivers: [
-          SliverList(
-            delegate: SliverChildListDelegate(
-              [
-                Container(
-                  color: kDarkBlue,
-                  child: Column(
-                    children: [
-                      Divider(
-                          color: Colors.blue,
-                          thickness: 5,
-                          indent: 20,
-                          endIndent: 20),
-                      const SizedBox(height: 15),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          SizedBox(
-                            width: 1,
-                          ),
-                          InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) {
-                                    return const Governo();
-                                  },
-                                ),
-                              );
-                            },
-                            child: Stack(
-                              children: [
-                                Column(
-                                  children: const [
-                                    CircleAvatar(
-                                      radius: 30,
-                                      child: Image(
-                                        image: AssetImage('assets/1.png'),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 20,
-                                    ),
-                                    Text(
-                                      "GOV.\nDOUYE DIRI",
-                                      style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold),
-                                      textAlign: TextAlign.center,
-                                    ),
-                                  ],
-                                ),
-                                // const Positioned(
-                                //   right: 0,
-                                //   top: 0,
-                                //   child: CircleAvatar(
-                                //     radius: 12,
-                                //     backgroundColor: Colors.red,
-                                //     child: Icon(
-                                //       Icons.exposure_plus_2_rounded,
-                                //       color: Colors.white,
-                                //       size: 20,
-                                //     ),
-                                //   ),
-                                // )
-                              ],
-                            ),
-                          ),
-                          InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) {
-                                    return const PressRelease();
-                                  },
-                                ),
-                              );
-                            },
-                            child: Stack(
-                              children: [
-                                Column(
-                                  children: const [
-                                    CircleAvatar(
-                                      radius: 30,
-                                      child: Image(
-                                        image: AssetImage('assets/2.png'),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 20,
-                                    ),
-                                    Text(
-                                      "PRESS\nRELEASE",
-                                      style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold),
-                                      textAlign: TextAlign.center,
-                                    ),
-                                  ],
-                                ),
-                                const Positioned(
-                                  right: 0,
-                                  top: 0,
-                                  child: CircleAvatar(
-                                    radius: 12,
-                                    backgroundColor: Colors.red,
-                                    // child: Icon(
-                                    //   Icons.exposure_plus_1_rounded,
-                                    //   color: Colors.white,
-                                    //   size: 20,
-                                    // ),
-                                    child: Text(
-                                      '3',
-                                      style: TextStyle(
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) {
-                                    return VerticalSliderDemo();
-                                  },
-                                ),
-                              );
-                            },
-                            child: Stack(
-                              children: [
-                                Column(
-                                  children: const [
-                                    CircleAvatar(
-                                      radius: 30,
-                                      child: Image(
-                                        image: AssetImage('assets/3.png'),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 20,
-                                    ),
-                                    Text(
-                                      "PUBLIC\nNOTICE",
-                                      style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold),
-                                      textAlign: TextAlign.center,
-                                    ),
-                                  ],
-                                ),
-                                const Positioned(
-                                  right: 0,
-                                  top: 0,
-                                  child: CircleAvatar(
-                                    radius: 12,
-                                    backgroundColor: Colors.red,
-                                    child: Text(
-                                      '1',
-                                      style: TextStyle(
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) {
-                                    return VideoFeeds();
-                                  },
-                                ),
-                              );
-                            },
-                            child: Stack(
-                              children: [
-                                Column(
-                                  children: const [
-                                    CircleAvatar(
-                                      radius: 30,
-                                      child: Image(
-                                        image: AssetImage('assets/4.png'),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 20,
-                                    ),
-                                    Text(
-                                      "VIDEO\nFEEDS",
-                                      style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold),
-                                      textAlign: TextAlign.center,
-                                    ),
-                                  ],
-                                ),
-                                const Positioned(
-                                  right: 0,
-                                  top: 0,
-                                  child: CircleAvatar(
-                                    radius: 12,
-                                    backgroundColor: Colors.red,
-                                    child: Text(
-                                      '10',
-                                      style: TextStyle(
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) {
-                                    return const AudioPosts();
-                                  },
-                                ),
-                              );
-                            },
-                            child: Stack(
-                              children: [
-                                Column(
-                                  children: const [
-                                    CircleAvatar(
-                                      radius: 30,
-                                      child: Image(
-                                        image: AssetImage('assets/5.png'),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 20,
-                                    ),
-                                    Text(
-                                      "AUDIO\nBROADCASTS",
-                                      style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold),
-                                      textAlign: TextAlign.center,
-                                    ),
-                                  ],
-                                ),
-                                const Positioned(
-                                  right: 0,
-                                  top: 0,
-                                  child: CircleAvatar(
-                                    radius: 12,
-                                    backgroundColor: Colors.red,
-                                    child: Text(
-                                      '1',
-                                      style: TextStyle(
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          SizedBox(
-                            width: 1,
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      // Stack(
-                      //   children: [
-                      //     // const Image(image: AssetImage('assets/Home1.png')),
-                      //     NewSlider(),
-                      //     Positioned(
-                      //       top: 200,
-                      //       child: Container(
-                      //         width: 400,
-                      //         height: 150,
-                      //         color: Colors.black.withOpacity(0.5),
-                      //         child: const Text(
-                      //           "Nembe Oil Spill: Bayelsa Sets Up 11-Man Technical Committee, Gov. DiriDissatisfied with Rep's Silence over spill",
-                      //           style: TextStyle(
-                      //             fontSize: 25,
-                      //             fontWeight: FontWeight.bold,
-                      //           ),
-                      //         ),
-                      //       ),
-                      //     ),
-                      //   ],
-                      // ),
-                      NewSlider(),
-                      // const SizedBox(
-                      //   height: 10,
-                      // ),
-                      // Row(
-                      //   mainAxisAlignment: MainAxisAlignment.center,
-                      //   children: [
-                      //     const Icon(
-                      //       Icons.circle,
-                      //       size: 12,
-                      //     ),
-                      //     const SizedBox(
-                      //       width: 5,
-                      //     ),
-                      //     const Icon(
-                      //       Icons.circle,
-                      //       size: 12,
-                      //     ),
-                      //     const SizedBox(
-                      //       width: 5,
-                      //     ),
-                      //     Container(
-                      //       width: 40,
-                      //       height: 10,
-                      //       child: const Text(''),
-                      //       decoration: BoxDecoration(
-                      //         color: Colors.grey.shade700,
-                      //         borderRadius: BorderRadius.circular(10),
-                      //       ),
-                      //     ),
-                      //     const SizedBox(
-                      //       width: 5,
-                      //     ),
-                      //     const Icon(
-                      //       Icons.circle,
-                      //       size: 12,
-                      //     ),
-                      //     const SizedBox(
-                      //       width: 5,
-                      //     ),
-                      //     const Icon(
-                      //       Icons.circle,
-                      //       size: 12,
-                      //     ),
-                      //   ],
-                      // ),
-                      const SizedBox(
-                        height: 30,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Row(
-                          children: [
-                            Container(
-                              height: 30,
-                              width: 10,
-                              color: Colors.blue,
-                              child: const Text(''),
-                            ),
-                            const SizedBox(
-                              width: 10,
-                            ),
-                            Text(
-                              'News and Events',
-                              style: TextStyle(fontFamily: 'raleway',fontSize: 18,fontWeight: FontWeight.bold),
-                            ),
-                            const Spacer(),
-                            InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) {
-                                      return NewsAndEvents();
-                                    },
-                                  ),
-                                );
-                              },
-                              child: Text(
-                                'See all',
-                                style: TextStyle(fontFamily: 'raleway',fontSize: 18,fontWeight: FontWeight.bold),
+      body:SingleChildScrollView(
+        child: Container(
+          color: kDarkBlue,
+          child: Column(
+            children: [
+              Divider(
+                  color: Colors.blue,
+                  thickness: 5,
+                  indent: 20,
+                  endIndent: 20),
+              const SizedBox(height: 15),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  SizedBox(
+                    width: 1,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const Governo();
+                          },
+                        ),
+                      );
+                    },
+                    child: Stack(
+                      children: [
+                        Column(
+                          children: const [
+                            CircleAvatar(
+                              radius: 30,
+                              child: Image(
+                                image: AssetImage('assets/1.png'),
                               ),
                             ),
-                            const SizedBox(
-                              width: 10,
+                            SizedBox(
+                              height: 20,
                             ),
-                            const Icon(
-                              Icons.arrow_right_alt,
-                              size: 30,
-                            )
+                            Text(
+                              "GOV.\nDOUYE DIRI",
+                              style: TextStyle(
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.bold),
+                              textAlign: TextAlign.center,
+                            ),
                           ],
                         ),
+                        // const Positioned(
+                        //   right: 0,
+                        //   top: 0,
+                        //   child: CircleAvatar(
+                        //     radius: 12,
+                        //     backgroundColor: Colors.red,
+                        //     child: Icon(
+                        //       Icons.exposure_plus_2_rounded,
+                        //       color: Colors.white,
+                        //       size: 20,
+                        //     ),
+                        //   ),
+                        // )
+                      ],
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const PressRelease();
+                          },
+                        ),
+                      );
+                    },
+                    child: Stack(
+                      children: [
+                        Column(
+                          children: const [
+                            CircleAvatar(
+                              radius: 30,
+                              child: Image(
+                                image: AssetImage('assets/2.png'),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              "PRESS\nRELEASE",
+                              style: TextStyle(
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.bold),
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                        const Positioned(
+                          right: 0,
+                          top: 0,
+                          child: CircleAvatar(
+                            radius: 12,
+                            backgroundColor: Colors.red,
+                            // child: Icon(
+                            //   Icons.exposure_plus_1_rounded,
+                            //   color: Colors.white,
+                            //   size: 20,
+                            // ),
+                            child: Text(
+                              '3',
+                              style: TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return VerticalSliderDemo();
+                          },
+                        ),
+                      );
+                    },
+                    child: Stack(
+                      children: [
+                        Column(
+                          children: const [
+                            CircleAvatar(
+                              radius: 30,
+                              child: Image(
+                                image: AssetImage('assets/3.png'),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              "PUBLIC\nNOTICE",
+                              style: TextStyle(
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.bold),
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                        const Positioned(
+                          right: 0,
+                          top: 0,
+                          child: CircleAvatar(
+                            radius: 12,
+                            backgroundColor: Colors.red,
+                            child: Text(
+                              '1',
+                              style: TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return VideoFeeds();
+                          },
+                        ),
+                      );
+                    },
+                    child: Stack(
+                      children: [
+                        Column(
+                          children: const [
+                            CircleAvatar(
+                              radius: 30,
+                              child: Image(
+                                image: AssetImage('assets/4.png'),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              "VIDEO\nFEEDS",
+                              style: TextStyle(
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.bold),
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                        const Positioned(
+                          right: 0,
+                          top: 0,
+                          child: CircleAvatar(
+                            radius: 12,
+                            backgroundColor: Colors.red,
+                            child: Text(
+                              '10',
+                              style: TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const AudioPosts();
+                          },
+                        ),
+                      );
+                    },
+                    child: Stack(
+                      children: [
+                        Column(
+                          children: const [
+                            CircleAvatar(
+                              radius: 30,
+                              child: Image(
+                                image: AssetImage('assets/5.png'),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              "AUDIO\nBROADCASTS",
+                              style: TextStyle(
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.bold),
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                        const Positioned(
+                          right: 0,
+                          top: 0,
+                          child: CircleAvatar(
+                            radius: 12,
+                            backgroundColor: Colors.red,
+                            child: Text(
+                              '1',
+                              style: TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 1,
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              // Stack(
+              //   children: [
+              //     // const Image(image: AssetImage('assets/Home1.png')),
+              //     NewSlider(),
+              //     Positioned(
+              //       top: 200,
+              //       child: Container(
+              //         width: 400,
+              //         height: 150,
+              //         color: Colors.black.withOpacity(0.5),
+              //         child: const Text(
+              //           "Nembe Oil Spill: Bayelsa Sets Up 11-Man Technical Committee, Gov. DiriDissatisfied with Rep's Silence over spill",
+              //           style: TextStyle(
+              //             fontSize: 25,
+              //             fontWeight: FontWeight.bold,
+              //           ),
+              //         ),
+              //       ),
+              //     ),
+              //   ],
+              // ),
+              NewSlider(),
+              // const SizedBox(
+              //   height: 10,
+              // ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.center,
+              //   children: [
+              //     const Icon(
+              //       Icons.circle,
+              //       size: 12,
+              //     ),
+              //     const SizedBox(
+              //       width: 5,
+              //     ),
+              //     const Icon(
+              //       Icons.circle,
+              //       size: 12,
+              //     ),
+              //     const SizedBox(
+              //       width: 5,
+              //     ),
+              //     Container(
+              //       width: 40,
+              //       height: 10,
+              //       child: const Text(''),
+              //       decoration: BoxDecoration(
+              //         color: Colors.grey.shade700,
+              //         borderRadius: BorderRadius.circular(10),
+              //       ),
+              //     ),
+              //     const SizedBox(
+              //       width: 5,
+              //     ),
+              //     const Icon(
+              //       Icons.circle,
+              //       size: 12,
+              //     ),
+              //     const SizedBox(
+              //       width: 5,
+              //     ),
+              //     const Icon(
+              //       Icons.circle,
+              //       size: 12,
+              //     ),
+              //   ],
+              // ),
+              const SizedBox(
+                height: 30,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 30,
+                      width: 10,
+                      color: Colors.blue,
+                      child: const Text(''),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'News and Events',
+                      style: TextStyle(fontFamily: 'raleway',fontSize: 18,fontWeight: FontWeight.bold),
+                    ),
+                    const Spacer(),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return NewsAndEvents();
+                            },
+                          ),
+                        );
+                      },
+                      child: Text(
+                        'See all',
+                        style: TextStyle(fontFamily: 'raleway',fontSize: 18,fontWeight: FontWeight.bold),
                       ),
-                      CreatContainer(
-                          'Gov Diri Tasks Army On Agge, \nOluasiri Bases - Seeks \nCooperation On Arrests In \nBayelsa Communities',
-                          'assets/Event2.jpg'),
-                      CreatContainer(
-                          'Gov. Diri Lauds Buhari For New\nPolice Headquarters In\nYenagoa-Seeks Review Of \nRevenue Allocation Formular',
-                          'assets/Event3.jpg'),
-                      CreatContainer(
-                          'Gov Diri Tasks Army On Agge, \nOluasiri Bases - Seeks \nCooperation On Arrests In \nBayelsa Communities',
-                          'assets/Event2.jpg'),
-                      CreatContainer(
-                          'Gov. Diri Lauds Buhari For New\nPolice Headquarters In\nYenagoa-Seeks Review Of \nRevenue Allocation Formular',
-                          'assets/Event3.jpg'),
-                    ],
-                  ),
-                ),
-                const SizedBox(
-                  height: 15,
-                ),
-              ],
-            ),
-          ),
-          SliverFillRemaining(
-            fillOverscroll: true,
-            hasScrollBody: false,
-            child: Align(
-              alignment: Alignment.bottomCenter,
-              child: Container(
-                width: double.infinity,
-                height: 40,
-                color: Colors.red,
-                child: const Center(
-                  child: Text(
-                    'Our Proud Partners: Zenith Bank | UBA | Agip | NCDMB',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold),
-                  ),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    const Icon(
+                      Icons.arrow_right_alt,
+                      size: 30,
+                    )
+                  ],
                 ),
               ),
-            ),
-          )
-        ],
+              CreatContainer(
+                  'Gov Diri Tasks Army On Agge, \nOluasiri Bases - Seeks \nCooperation On Arrests In \nBayelsa Communities',
+                  'assets/Event2.jpg'),
+              CreatContainer(
+                  'Gov. Diri Lauds Buhari For New\nPolice Headquarters In\nYenagoa-Seeks Review Of \nRevenue Allocation Formular',
+                  'assets/Event3.jpg'),
+              CreatContainer(
+                  'Gov Diri Tasks Army On Agge, \nOluasiri Bases - Seeks \nCooperation On Arrests In \nBayelsa Communities',
+                  'assets/Event2.jpg'),
+              CreatContainer(
+                  'Gov. Diri Lauds Buhari For New\nPolice Headquarters In\nYenagoa-Seeks Review Of \nRevenue Allocation Formular',
+                  'assets/Event3.jpg'),
+              const SizedBox(
+                height: 20,
+              ),
+            ],
+          ),
+        ),
+      ),
+      bottomNavigationBar: Container(
+        padding: EdgeInsets.symmetric(vertical: 10),
+        width: double.infinity,
+        height: 35,
+        color: Colors.red,
+        child: Text(
+          'Our Proud Partners: Zenith Bank | UBA | Agip | NCDMB',
+          style: TextStyle(
+              color: Colors.white,
+              fontSize: 16,
+              fontWeight: FontWeight.bold),
+        ),
       ),
     );
   }

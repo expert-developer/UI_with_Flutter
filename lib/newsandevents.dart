@@ -46,47 +46,48 @@ class NewsAndEvents extends StatelessWidget {
         body:SingleChildScrollView(
           child: Column(
             children: [
-              const SizedBox(
-                height: 10,
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Image(
+                      width: 133,
+                      height: 133,
+                      image: AssetImage(
+                          'assets/News and Events-image5.png'),
+                    ),
+                    SizedBox(
+                      width: 40,
+                    ),
+                    Text(
+                      'News &\nEvents',
+                      style: TextStyle(
+                          fontSize: 30, fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Image(
-                    width: 133,
-                    height: 133,
-                    image: AssetImage(
-                        'assets/News and Events-image5.png'),
-                  ),
-                  SizedBox(
-                    width: 40,
-                  ),
-                  Text(
-                    'News &\nEvents',
-                    style: TextStyle(
-                        fontSize: 30, fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
-              const SizedBox(
+              SizedBox(
                 height: 20,
               ),
               SingleChildScrollView(
-                child: Column(
-                  children: [
-                    CreatContainer(
-                        'Gov Diri Tasks Army On Agge, \nOluasiri Bases - Seeks \nCooperation On Arrests In \nBayelsa Communities',
-                        'assets/Event2.jpg',context),
-                    CreatContainer(
-                        'Gov. Diri Lauds Buhari For New\nPolice Headquarters In\nYenagoa-Seeks Review Of \nRevenue Allocation Formular',
-                        'assets/Event3.jpg',context),
-                    CreatContainer(
-                        'Gov Diri Tasks Army On Agge, \nOluasiri Bases - Seeks \nCooperation On Arrests In \nBayelsa Communities',
-                        'assets/Event2.jpg',context),
-                    CreatContainer(
-                        'Gov. Diri Lauds Buhari For New\nPolice Headquarters In\nYenagoa-Seeks Review Of \nRevenue Allocation Formular',
-                        'assets/Event3.jpg',context),
-                  ],
+                child: Container(
+                  child: Column(
+                    children: [
+                      CreatContainer(
+                          'Gov Diri Tasks Army On Agge, \nOluasiri Bases - Seeks \nCooperation On Arrests In \nBayelsa Communities',
+                          'assets/Event2.jpg',context),
+                      CreatContainer(
+                          'Gov. Diri Lauds Buhari For New\nPolice Headquarters In\nYenagoa-Seeks Review Of \nRevenue Allocation Formular',
+                          'assets/Event3.jpg',context),
+                      CreatContainer(
+                          'Gov Diri Tasks Army On Agge, \nOluasiri Bases - Seeks \nCooperation On Arrests In \nBayelsa Communities',
+                          'assets/Event2.jpg',context),
+                      CreatContainer(
+                          'Gov. Diri Lauds Buhari For New\nPolice Headquarters In\nYenagoa-Seeks Review Of \nRevenue Allocation Formular',
+                          'assets/Event3.jpg',context),
+                    ],
+                  ),
                 ),
               ),
               const SizedBox(
@@ -95,12 +96,14 @@ class NewsAndEvents extends StatelessWidget {
             ],
           ),
         ),
+
+
         bottomNavigationBar: Container(
           padding: EdgeInsets.symmetric(vertical: 10),
           width: double.infinity,
           height: 35,
           color: Colors.red,
-          child: Text(
+          child: const Text(
             'Our Proud Partners: Zenith Bank | UBA | Agip | NCDMB',
             style: TextStyle(
                 color: Colors.white,
